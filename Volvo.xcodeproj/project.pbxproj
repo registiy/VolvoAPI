@@ -11,6 +11,18 @@
 		8DB85568284E1087001286AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85567284E1087001286AC /* ContentView.swift */; };
 		8DB8556A284E1088001286AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB85569284E1088001286AC /* Assets.xcassets */; };
 		8DB8556D284E1088001286AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB8556C284E1088001286AC /* Preview Assets.xcassets */; };
+		8DB8557A284F5FC2001286AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85579284F5FC2001286AC /* SettingsView.swift */; };
+		8DB8557D284F662B001286AC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8557C284F662B001286AC /* SettingsViewModel.swift */; };
+		8DB8557F284F73E7001286AC /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8557E284F73E7001286AC /* Api.swift */; };
+		8DB85583284FE6CE001286AC /* VehicleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85582284FE6CE001286AC /* VehicleListView.swift */; };
+		8DB85585284FE919001286AC /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85584284FE919001286AC /* VehicleDetailView.swift */; };
+		8DB85587284FEB72001286AC /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85586284FEB72001286AC /* VehicleListViewModel.swift */; };
+		8DB85589284FEBA3001286AC /* VehicleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85588284FEBA3001286AC /* VehicleDetailsViewModel.swift */; };
+		8DB8558B2850E1AC001286AC /* VehicleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8558A2850E1AC001286AC /* VehicleListModel.swift */; };
+		8DB8558D2851556D001286AC /* VehicleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8558C2851556D001286AC /* VehicleDetailModel.swift */; };
+		8DB8558F28529577001286AC /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8558E28529577001286AC /* StatisticsModel.swift */; };
+		8DB85591285296C5001286AC /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85590285296C5001286AC /* StatisticsViewModel.swift */; };
+		8DB8559328529783001286AC /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8559228529783001286AC /* StatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +31,18 @@
 		8DB85567284E1087001286AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DB85569284E1088001286AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DB8556C284E1088001286AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DB85579284F5FC2001286AC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8DB8557C284F662B001286AC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		8DB8557E284F73E7001286AC /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		8DB85582284FE6CE001286AC /* VehicleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListView.swift; sourceTree = "<group>"; };
+		8DB85584284FE919001286AC /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
+		8DB85586284FEB72001286AC /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		8DB85588284FEBA3001286AC /* VehicleDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsViewModel.swift; sourceTree = "<group>"; };
+		8DB8558A2850E1AC001286AC /* VehicleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListModel.swift; sourceTree = "<group>"; };
+		8DB8558C2851556D001286AC /* VehicleDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailModel.swift; sourceTree = "<group>"; };
+		8DB8558E28529577001286AC /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
+		8DB85590285296C5001286AC /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		8DB8559228529783001286AC /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +75,12 @@
 		8DB85564284E1087001286AC /* Volvo */ = {
 			isa = PBXGroup;
 			children = (
+				8DB85580284FD0C5001286AC /* API */,
+				8DB8557B284F661B001286AC /* ViewModel */,
+				8DB85581284FE6AF001286AC /* View */,
 				8DB85565284E1087001286AC /* VolvoApp.swift */,
 				8DB85567284E1087001286AC /* ContentView.swift */,
+				8DB85579284F5FC2001286AC /* SettingsView.swift */,
 				8DB85569284E1088001286AC /* Assets.xcassets */,
 				8DB8556B284E1088001286AC /* Preview Content */,
 			);
@@ -65,6 +93,38 @@
 				8DB8556C284E1088001286AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8DB8557B284F661B001286AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8557C284F662B001286AC /* SettingsViewModel.swift */,
+				8DB85586284FEB72001286AC /* VehicleListViewModel.swift */,
+				8DB85588284FEBA3001286AC /* VehicleDetailsViewModel.swift */,
+				8DB85590285296C5001286AC /* StatisticsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DB85580284FD0C5001286AC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8557E284F73E7001286AC /* Api.swift */,
+				8DB8558A2850E1AC001286AC /* VehicleListModel.swift */,
+				8DB8558C2851556D001286AC /* VehicleDetailModel.swift */,
+				8DB8558E28529577001286AC /* StatisticsModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8DB85581284FE6AF001286AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DB85582284FE6CE001286AC /* VehicleListView.swift */,
+				8DB85584284FE919001286AC /* VehicleDetailView.swift */,
+				8DB8559228529783001286AC /* StatisticsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +197,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB85585284FE919001286AC /* VehicleDetailView.swift in Sources */,
+				8DB8557D284F662B001286AC /* SettingsViewModel.swift in Sources */,
+				8DB8557A284F5FC2001286AC /* SettingsView.swift in Sources */,
+				8DB8559328529783001286AC /* StatisticsView.swift in Sources */,
+				8DB8557F284F73E7001286AC /* Api.swift in Sources */,
+				8DB85587284FEB72001286AC /* VehicleListViewModel.swift in Sources */,
+				8DB8558D2851556D001286AC /* VehicleDetailModel.swift in Sources */,
+				8DB85583284FE6CE001286AC /* VehicleListView.swift in Sources */,
+				8DB85589284FEBA3001286AC /* VehicleDetailsViewModel.swift in Sources */,
+				8DB85591285296C5001286AC /* StatisticsViewModel.swift in Sources */,
+				8DB8558F28529577001286AC /* StatisticsModel.swift in Sources */,
 				8DB85568284E1087001286AC /* ContentView.swift in Sources */,
+				8DB8558B2850E1AC001286AC /* VehicleListModel.swift in Sources */,
 				8DB85566284E1087001286AC /* VolvoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
