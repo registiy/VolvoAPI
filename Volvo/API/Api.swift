@@ -40,6 +40,10 @@ extension Api {
     func decodeData(_ data: Data) -> decodableModel? {
         let decoder = JSONDecoder()
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        
         if let decodedResponse = try? decoder.decode(decodableModel.self, from: data) {
             return decodedResponse
         }

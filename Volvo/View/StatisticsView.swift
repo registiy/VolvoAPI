@@ -32,31 +32,31 @@ struct StatisticsView: View {
                 Section("Average fuel consumption") {
                     Text("\(viewModel.statistics?.data.averageFuelConsumption.value ?? "")")
                     Text("\(viewModel.statistics?.data.averageFuelConsumption.unit ?? "")")
-                    Text("\(viewModel.statistics?.data.averageFuelConsumption.timestamp ?? "")")
+                    Text("\(viewModel.statistics?.data.averageFuelConsumption.timestampStr ?? "")")
                 }
                 
                 Section("Average speed") {
                     Text("\(viewModel.statistics?.data.averageSpeed.value ?? "")")
                     Text("\(viewModel.statistics?.data.averageSpeed.unit ?? "")")
-                    Text("\(viewModel.statistics?.data.averageSpeed.timestamp ?? "")")
+                    Text("\(viewModel.statistics?.data.averageSpeed.timestampStr ?? "")")
                 }
                 
                 Section("Trip meter 1") {
                     Text("\(viewModel.statistics?.data.tripMeter1.value ?? "")")
                     Text("\(viewModel.statistics?.data.tripMeter1.unit ?? "")")
-                    Text("\(viewModel.statistics?.data.tripMeter1.timestamp ?? "")")
+                    Text("\(viewModel.statistics?.data.tripMeter1.timestampStr ?? "")")
                 }
                 
                 Section("Trip meter 2") {
                     Text("\(viewModel.statistics?.data.tripMeter2.value ?? "")")
                     Text("\(viewModel.statistics?.data.tripMeter2.unit ?? "")")
-                    Text("\(viewModel.statistics?.data.tripMeter2.timestamp ?? "")")
+                    Text("\(viewModel.statistics?.data.tripMeter2.timestampStr ?? "")")
                 }
                 
                 Section("Distance to empty") {
                     Text("\(viewModel.statistics?.data.distanceToEmpty.value ?? "")")
                     Text("\(viewModel.statistics?.data.distanceToEmpty.unit ?? "")")
-                    Text("\(viewModel.statistics?.data.distanceToEmpty.timestamp ?? "")")
+                    Text("\(viewModel.statistics?.data.distanceToEmpty.timestampStr ?? "")")
                 }
                 
             } else if viewModel.isLoading {

@@ -28,7 +28,14 @@ class StatisticsModel: Api {
     struct StatisticsDataElement: Decodable {
         let unit: String
         let value: String
-        let timestamp: String
+        let timestamp: Date
+        
+        var timestampStr: String {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateStyle = .long
+            dateFormatter.timeStyle = .long
+            return dateFormatter.string(from: timestamp)
+        }
     }
     
     var url: String {
